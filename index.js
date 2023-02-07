@@ -50,8 +50,13 @@ const PORT = process.env.PORT || 5000;
 
 const app = express();
 
-app.get('/', (req, res) => {
-    res.json('Top Stories')
+// app.get('/', (req, res) => {
+//     res.json('Top Stories')
+
+// });
+
+app.get('/', (req, res) =>{
+    res.send('<h1>Top Climate News Headlines API</h1>');
 
 });
 
